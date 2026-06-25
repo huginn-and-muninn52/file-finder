@@ -4,7 +4,8 @@
     <version>1.4</version>
     <vendor email="an.vasilev@arenadata.io" url="mailto:an.vasilev@arenadata.io">Anton</vendor>
     <description><![CDATA[
-  Switch en ↔ ru with Ctrl+Alt+\
+  Switch between 'en' and 'ru' folders for the same file. 
+  Works with single or multiple file selection, preserves caret position and scroll offset.
 ]]></description>
 
     <!-- See https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html -->
