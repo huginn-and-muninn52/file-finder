@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>File-Finder</id>
-    <name>File Finder</name>
+    <id>En-Ru-File-Finder</id>
+    <name>EnRu File Finder</name>
     <version>1.4</version>
     <vendor email="an.vasilev@arenadata.io" url="mailto:an.vasilev@arenadata.io">Anton</vendor>
     <description><![CDATA[
