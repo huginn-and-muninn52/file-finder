@@ -1,0 +1,38 @@
+<idea-plugin>
+    <id>File-Finder</id>
+    <name>File Finder</name>
+    <version>1.4</version>
+    <vendor email="an.vasilev@arenadata.io" url="mailto:an.vasilev@arenadata.io">Anton</vendor>
+    <description><![CDATA[
+  Switch en ↔ ru with Ctrl+Alt+\
+]]></description>
+
+    <!-- See https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html -->
+    <idea-version since-build="232.0"/>
+
+    <!-- See https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <applicationListeners>
+        <listener class="liveplugin.implementation.pluginrunner.kotlin.PackagedPluginAppLifecycle"
+                  topic="com.intellij.ide.AppLifecycleListener"/>
+        <listener class="liveplugin.implementation.pluginrunner.kotlin.PackagedPluginDynamicLifecycle"
+                  topic="com.intellij.ide.plugins.DynamicPluginListener"/>
+    </applicationListeners>
+
+    <change-notes><![CDATA[
+  <h3>Version 1.4</h3>
+  <ul>
+    <li><b>Multiple file selection</b> – now you can select several files in the Project tool window (Shift+click or Ctrl+click) and the plugin will open all their counterparts from the opposite language folder.</li>
+    <li><b>Folder detection</b> – plugin now ignores folders; if you select a folder, it will show a clear message instead of trying to process it.</li>
+    <li><b>Caret position sync</b> – if the original file is already open in the editor, the plugin remembers the cursor line and moves the caret to the same line in the opened counterpart file.</li>
+    <li><b>Clearer feedback</b> – improved notification messages: you'll see how many files were opened, and any errors (e.g., missing counterpart) are listed separately.</li>
+    <li><b>Bug fixes</b> – fixed NPE when processing files in project root, and other edge cases.</li>
+  </ul>
+  <h3>Version 1.3</h3>
+  <ul>
+    <li>Initial release: switch between en/ru files with Ctrl+Alt+\</li>
+  </ul>
+]]></change-notes>
+    
+</idea-plugin>
